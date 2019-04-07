@@ -1,0 +1,19 @@
+{
+  "name": "heliosapi",
+  "version": "1.0.0",
+  "description": "Wrapper around SunPeak's api for solar panel data; specifically for the Gordon's panels at UW-Madison.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Helios-UWMadison/HeliosAPIWrapper.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Helios-UWMadison/HeliosAPIWrapper/issues"
+  },
+  "homepage": "https://github.com/Helios-UWMadison/HeliosAPIWrapper#readme"
+}
