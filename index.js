@@ -18,8 +18,6 @@ function extractParametersFromEvent (event) {
   */
 };
 
-
-
 exports.handler = function (event, context, callback) {
   let parameters = extractParametersFromEvent(event);
 
@@ -37,9 +35,10 @@ exports.handler = function (event, context, callback) {
       format: 'csv'
     }
   }, function (error, response, body) {
-    //console.log(error);
-    //console.log(response);
-    console.log('Status Code: ', response.statusCode);
+    console.log(error);
+    console.log(response);
+    console.log(body);
+    //console.log('Status Code: ', response.statusCode);
     /*
     if (!error) {
       jsonResponse = convertCSVToJSON(body);
@@ -48,5 +47,3 @@ exports.handler = function (event, context, callback) {
     */
   });
 };
-
-exports.handler('', '');

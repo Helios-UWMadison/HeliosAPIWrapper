@@ -6,7 +6,10 @@ phases:
       - echo Nothing to do in the install phase...
   pre_build:
     commands:
-      - echo Nothing to do in the pre_build phase...
+      - echo Installing source NPM dependencies
+      - npm install
+      - npm install request
+      - npm install csvtojson
   build:
     commands:
       - echo Build started on `date`
@@ -16,6 +19,4 @@ phases:
 artifacts:
   files:
     - index.js
-    - node_modules/*
     - package.json
-    - package-lock.json
